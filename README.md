@@ -1,8 +1,8 @@
-# Fate Gulp Task
+# Fate Gulp Plugin
 
 [Fate](http://www.fate-lang.org/) is a programming language that targets the V8 JavaScript JVM.  It is a mostly functional language that provides first-class patterns, invocation guards, list comprehensions, flexible function application, and awesome concurrency.
 
-And this is a Gulp Task for compiling it.
+And this is a Gulp Plugin for compiling it.
 
 ## How to Install and Use
 
