@@ -14,7 +14,7 @@ npm install gulp-fatejs --save-dev
 Then use it in your `gulpfile.js`, like so:
 
 ```javascript
-var fatejs = require('../index');
+var fatejs = require('gulp-fatejs');
 
 var gulp = require('gulp');
 var beautify = require('gulp-beautify');
