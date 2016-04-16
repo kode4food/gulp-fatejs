@@ -11,11 +11,29 @@ And this is a Gulp Task for compiling it.
 npm install gulp-fatejs --save-dev
 ```
 
-Then add it to your `gulpfile.js`, like so:
+Then use it in your `gulpfile.js`, like so:
 
 ```javascript
-// require the Fate module
-var fate = require('gulp-fatejs');
+var fatejs = require('../index');
+
+var gulp = require('gulp');
+var beautify = require('gulp-beautify');
+var rename = require('gulp-rename');
+
+var fateFiles = ['src/**/*.fate'];
+var destDir = './dest';
+
+gulp.task('compile', function () {
+  return gulp.src(fateFiles)
+             .pipe(fatejs())
+             .pipe(beautify({ indentSize: 2 }))
+             .pipe(rename(function (path) {
+                path.extname = ".js";
+              }))
+             .pipe(gulp.dest(destDir));
+});
+
+gulp.task('default', ['compile']);
 ```
 
 ## License (MIT License)

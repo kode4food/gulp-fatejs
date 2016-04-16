@@ -1,3 +1,5 @@
+"use strict";
+
 const through = require('through2');
 
 const fatec = require('fatejs/dist/compiler/Compiler');
@@ -5,14 +7,9 @@ const fatecli = require('fatejs/dist/cli/Compiler');
 
 const pluginName = "gulp-fatejs";
 
-module.exports = function compiler(config) {
+module.exports = function compiler() {
 
   return through.obj(function(file, encoding, callback) {
-    if ( file.isNull() ) {
-      callback(null, file);
-      return;
-    }
-
     if ( file.isBuffer() ) {
       processString(file.contents.toString());
       return;
@@ -32,10 +29,15 @@ module.exports = function compiler(config) {
     }
 
     function processString(str) {
-      let compiled = fatec.compileModule(str);
-      let nodeModule = fatecli.generateNodeModule(compiled);
-      file.contents = new Buffer(nodeModule);
-      callback(null, file);
+      try {
+        let script = fatec.compileModule(str).scriptBody;
+        let nodeModule = fatecli.generateNodeModule(script);
+        file.contents = new Buffer(nodeModule);
+        callback(null, file);
+      }
+      catch ( err ) {
+        callback(err);
+      }
     }
   });
 
