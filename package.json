@@ -1,7 +1,7 @@
 {
   "name": "gulp-fatejs",
-  "version": "1.0.2",
-  "description": "Gulp task for Fate compilation",
+  "version": "1.0.3",
+  "description": "Gulp plugin for Fate compilation",
   "author": "Thomas S. Bradford",
   "license": "MIT",
   "bugs": {
