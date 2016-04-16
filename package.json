@@ -1,0 +1,28 @@
+{
+  "name": "gulp-fatejs",
+  "version": "1.0.0",
+  "description": "Gulp task for Fate compilation",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kode4food/gulp-fatejs.git"
+  },
+  "keywords": [
+    "gulp",
+    "fate",
+    "compiler"
+  ],
+  "dependencies": {
+    "fatejs": "^0.5.10",
+    "through2": "^2.0.1"
+  },
+  "author": "Thomas S. Bradford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kode4food/gulp-fatejs/issues"
+  },
+  "homepage": "https://github.com/kode4food/gulp-fatejs#readme"
+}
