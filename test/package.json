@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "1.0.0",
+  "description": "gulp-fatejs test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-beautify": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "vinyl-fs": "^2.4.3"
+  }
+}

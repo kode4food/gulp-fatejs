@@ -1,6 +1,6 @@
 {
   "name": "gulp-fatejs",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Gulp plugin for Fate compilation",
   "author": "Thomas S. Bradford",
   "license": "MIT",
@@ -22,9 +22,15 @@
     "compiler"
   ],
   "dependencies": {
-    "fatejs": "^0.5.11",
+    "fatejs": "^0.6.3",
     "through2": "^2.0.1"
   },
+  "author": "Thomas S. Bradford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kode4food/gulp-fatejs/issues"
+  },
+  "homepage": "https://github.com/kode4food/gulp-fatejs#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-beautify": "^2.0.0",
