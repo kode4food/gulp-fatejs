@@ -1,6 +1,6 @@
 {
   "name": "gulp-fatejs",
-  "version": "1.0.5",
+  "version": "1.0.1",
   "description": "Gulp task for Fate compilation",
   "main": "index.js",
   "scripts": {
