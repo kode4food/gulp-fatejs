@@ -2,7 +2,7 @@
 
 const through = require('through2');
 
-const fatec = require('fatejs/dist/compiler/Compiler');
+const fatec = require('fatejs/dist/compiler');
 const fatecli = require('fatejs/dist/cli/Compiler');
 
 const pluginName = "gulp-fatejs";
